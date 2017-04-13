@@ -490,14 +490,15 @@ input, textarea {
 	.mainForm {
 		width: 70%;
 	}
-}
-@media (max-width: 680px) {
 	.text-left, .text-right {
 		display: block;
 		margin: 0 auto;
 		height: auto;
 		padding-bottom: 1rem;
 	}
+}
+@media (max-width: 680px) {
+	
 	.block-left, .block-right {
 		display: block;
 		text-align: center;
