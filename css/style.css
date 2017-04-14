@@ -396,6 +396,10 @@ input, textarea {
 	.block-left p, .block-right p, .block-right span {
 		font-size: 1.5rem;
 	}
+	.block-right p {
+		margin-bottom: 0;
+		margin-top: 0.5rem;
+	}
 	
 
 }
@@ -560,13 +564,21 @@ input, textarea {
 		width: 100%;
 		padding-top: 4rem;
 	}
+
 }
 @media (max-width: 570px) {
 	.text-left, .text-right {
 		margin: 6rem;
 	}
-	.burger_img img {
-		width: 150%;
+	.burger {
+		width: 100%;
+	}
+	.price {
+		width: 50%;
+		margin: 0 auto;
+	}
+	.block-right p {
+		text-align: left;
 	}
 }
 @media (max-width: 475px) {
@@ -579,12 +591,29 @@ input, textarea {
 	.map {
 		padding-left: 1rem;
 	}
-	.menu-good {
-		width: 20rem;
-	}
+	
 	.burger {
 		margin-bottom: 9rem;
 	}
+	h2.in {
+		font-size: 3.5rem;
+	}
+@media (max-width: 410px) {
+	.menu-good td:first-child {
+		padding-right: 2rem; 
+	}
+	.menu-good {
+		width: 15rem;
+		padding: 0.5rem;
+	}
+	.text-left h2 {
+		font-size: 2rem;
+		padding-left: 0;
+	}
+	.text-left {
+		width: 100%;
+	}
+
 }
 @media (max-width: 370px) {
 	.map p {
@@ -592,5 +621,15 @@ input, textarea {
 	}
 	.map span {
 		font-size: 1.5rem;
+	}
+	.block-right, .block-left {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.block-right h2, .block-left h2 {
+		font-size: 3rem;
+	}
+	.footer span {
+		margin-left: 0;
 	}
 }
