@@ -284,11 +284,13 @@ input, textarea {
 	width: 350px;
  	 height: 35px;
  	 margin-bottom: 8px;
+ 	 border: none;
 }
 .form-area {
 	width: 350px;
 	height: 110px;
 	margin-bottom: 8px;	
+	border: none;
 }
 .form-button {
 	display: block;
@@ -331,6 +333,9 @@ input, textarea {
 	font-size: 2rem;
 	line-height: 3rem;
 	margin-top: 2rem;
+}
+.map iframe {
+	width: 550px;
 }
 .footer {
 	height: 100px;
@@ -396,8 +401,20 @@ input, textarea {
 }
 @media (max-width: 1150px) {
 	.map {
-		display: block;
-		margin-left: 5rem;
+		width: 60%;
+		text-align: center;
+	}
+	.map iframe {
+		width: 450px;
+	}
+	.map p {
+		font-size: 1.5rem;
+	}
+	.mainForm {
+		width: 40%;
+	}
+	.map span {
+		font-size: 2rem;
 	}
 }
 @media (max-width: 1000px) {
@@ -409,17 +426,55 @@ input, textarea {
 		padding-left: 10rem;
 	}
 }
+@media (max-width: 960px) {
+	.map iframe {
+		width: 350px;
+	}
+	.map p {
+		font-size: 1rem;
+	}
+	.map span {
+		font-size: 1.5rem;
+	}
+}
 @media (max-width: 930px) {
 	.photo-big  {
-		display: block;
-		width: 50px;
+		display: inline-block;
+	}
+	.photo-big img {
+		width: 200px;
+		height: 153px;
 	}
 	.photo-small {
 		display: none;
 	}
-	.big_photo {
-		width: 50px;
+	.mainForm {
+		display: block;
+		width: 100%;
+		padding-top: 1rem;
 	}
+	.mainForm span {
+		margin-top: 1rem;
+	}
+	input.form-input, textarea.form-area, button.form-button {
+		width: 90%;
+	}
+	.map {
+		display: block;
+		width: 100%;
+		text-align: left;
+		padding-left: 5rem;
+	}
+	.map iframe {
+		width: 90%;
+	}
+	.map p {
+		font-size: 2rem;
+	}
+	.map span {
+		font-size: 2.5rem;
+	}
+	
 }
 @media (max-width: 880px) {
 	.logo {
@@ -475,11 +530,11 @@ input, textarea {
 		padding-left: 2rem;
 		font-size: 4rem;
 	}
-	.map p {
+	/*.map p {
 		font-size: 2rem;
 		display: block;
 		padding-left: 0;
-	}
+	}*/
 	.burger {
 		margin-bottom: 4rem;
 	}
@@ -487,9 +542,9 @@ input, textarea {
 		margin: 0;
 		width: 100%;
 	}
-	.mainForm {
+	/*.mainForm {
 		width: 70%;
-	}
+	}*/
 	.text-left, .text-right {
 		display: block;
 		margin: 0 auto;
@@ -510,6 +565,9 @@ input, textarea {
 	.text-left, .text-right {
 		margin: 6rem;
 	}
+	.burger_img img {
+		width: 150%;
+	}
 }
 @media (max-width: 475px) {
 	.text-left, .text-right {
@@ -519,7 +577,7 @@ input, textarea {
 		padding-left: 1rem;
 	}
 	.map {
-		margin-left: 1rem;
+		padding-left: 1rem;
 	}
 	.menu-good {
 		width: 20rem;
@@ -528,8 +586,11 @@ input, textarea {
 		margin-bottom: 9rem;
 	}
 }
-@media (max-width: 400px) {
-	input.form-input, textarea.form-area, button.form-button  {
-		width: 100%;
+@media (max-width: 370px) {
+	.map p {
+		font-size: 1.5rem;
+	}
+	.map span {
+		font-size: 1.5rem;
 	}
 }
