@@ -531,8 +531,8 @@ input, textarea {
 }
 @media (max-width: 770px) {
 	.text-left h2 {
-		padding-left: 2rem;
 		font-size: 4rem;
+		padding-left: 0;
 	}
 	/*.map p {
 		font-size: 2rem;
@@ -551,9 +551,9 @@ input, textarea {
 	}*/
 	.text-left, .text-right {
 		display: block;
-		margin: 0 auto;
 		height: auto;
 		padding-bottom: 1rem;
+		padding-left: 3rem;
 	}
 }
 @media (max-width: 680px) {
@@ -567,9 +567,7 @@ input, textarea {
 
 }
 @media (max-width: 570px) {
-	.text-left, .text-right {
-		margin: 6rem;
-	}
+	
 	.burger {
 		width: 100%;
 	}
@@ -583,7 +581,7 @@ input, textarea {
 }
 @media (max-width: 475px) {
 	.text-left, .text-right {
-		margin: 2rem;
+		margin: 0;
 	}
 	.mainForm {
 		padding-left: 1rem;
@@ -598,7 +596,13 @@ input, textarea {
 	h2.in {
 		font-size: 3.5rem;
 	}
+	@media (max-width: 430px) {
+	.text-left, .text-right {
+		padding-left: 0.5rem;
+	}
+	}
 @media (max-width: 410px) {
+
 	.menu-good td:first-child {
 		padding-right: 2rem; 
 	}
@@ -611,7 +615,7 @@ input, textarea {
 		padding-left: 0;
 	}
 	.text-left {
-		width: 100%;
+		width: 80%;
 	}
 
 }
