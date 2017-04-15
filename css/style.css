@@ -534,11 +534,15 @@ input, textarea {
 		font-size: 4rem;
 		padding-left: 0;
 	}
-	/*.map p {
-		font-size: 2rem;
-		display: block;
-		padding-left: 0;
-	}*/
+	.text-left {
+		text-align: center;
+		width: 100%;
+	}
+	.text-right {
+		width: 100%;
+		margin: 0 auto;
+	}
+	
 	.burger {
 		margin-bottom: 4rem;
 	}
@@ -546,9 +550,7 @@ input, textarea {
 		margin: 0;
 		width: 100%;
 	}
-	/*.mainForm {
-		width: 70%;
-	}*/
+	
 	.text-left, .text-right {
 		display: block;
 		height: auto;
@@ -600,7 +602,9 @@ input, textarea {
 	.text-left, .text-right {
 		padding-left: 0.5rem;
 	}
-	}
+	
+
+}
 @media (max-width: 410px) {
 
 	.menu-good td:first-child {
@@ -614,9 +618,8 @@ input, textarea {
 		font-size: 2rem;
 		padding-left: 0;
 	}
-	.text-left {
-		width: 80%;
-	}
+
+	
 
 }
 @media (max-width: 370px) {
