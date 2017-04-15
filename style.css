@@ -531,14 +531,18 @@ input, textarea {
 }
 @media (max-width: 770px) {
 	.text-left h2 {
-		padding-left: 2rem;
 		font-size: 4rem;
-	}
-	/*.map p {
-		font-size: 2rem;
-		display: block;
 		padding-left: 0;
-	}*/
+	}
+	.text-left {
+		text-align: center;
+		width: 100%;
+	}
+	.text-right {
+		width: 100%;
+		margin: 0 auto;
+	}
+	
 	.burger {
 		margin-bottom: 4rem;
 	}
@@ -546,14 +550,12 @@ input, textarea {
 		margin: 0;
 		width: 100%;
 	}
-	/*.mainForm {
-		width: 70%;
-	}*/
+	
 	.text-left, .text-right {
 		display: block;
-		margin: 0 auto;
 		height: auto;
 		padding-bottom: 1rem;
+		padding-left: 3rem;
 	}
 }
 @media (max-width: 680px) {
@@ -567,9 +569,7 @@ input, textarea {
 
 }
 @media (max-width: 570px) {
-	.text-left, .text-right {
-		margin: 6rem;
-	}
+	
 	.burger {
 		width: 100%;
 	}
@@ -583,7 +583,7 @@ input, textarea {
 }
 @media (max-width: 475px) {
 	.text-left, .text-right {
-		margin: 2rem;
+		margin: 0;
 	}
 	.mainForm {
 		padding-left: 1rem;
@@ -598,7 +598,15 @@ input, textarea {
 	h2.in {
 		font-size: 3.5rem;
 	}
+	@media (max-width: 430px) {
+	.text-left, .text-right {
+		padding-left: 0.5rem;
+	}
+	
+
+}
 @media (max-width: 410px) {
+
 	.menu-good td:first-child {
 		padding-right: 2rem; 
 	}
@@ -610,9 +618,8 @@ input, textarea {
 		font-size: 2rem;
 		padding-left: 0;
 	}
-	.text-left {
-		width: 80%;
-	}
+
+	
 
 }
 @media (max-width: 370px) {
