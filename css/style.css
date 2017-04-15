@@ -138,9 +138,16 @@ input:focus {
 	-webkit-background-size: 40px;
 	background-size: 40px;
 	display: inline-block;
+	font-size: 2rem;
+	margin-bottom: 2rem;
 }
+
 .button a {
 	text-decoration: none;
+	color: #000;
+	font-family: 'Martel', serif;
+	font-weight: 500;
+	line-height: 1.3;
 }
 #burgers {
 	width: 100%;
@@ -173,9 +180,18 @@ input:focus {
 }
 .price {
 	background-color: #e1e1e1;
-	width: 30%;
+	width: 40%;
 	text-align: center;
 	margin: 0 auto;
+}
+span sub {
+	vertical-align: super;
+}
+span.dollar  {
+	font-size: 2rem;
+	font-weight: 500;
+	padding-left: 1rem;
+	font-family: 'Rubik', sans-serif;
 }
 #what_else {
 	width: 100%;
@@ -277,6 +293,20 @@ span.in {
 }
 input, textarea {
 	font-family: 'Martel', serif;
+	padding: 0.5rem;
+}
+input::-webkit-input-placeholder {
+	color: #000;
+}
+input:-moz-placeholder {
+	color: #000;
+}
+textarea:-moz-placeholder {
+	color: #000;
+}
+
+textarea::-webkit-input-placeholder {
+	color: #000;
 }
 .form-input {
 	display: block;
@@ -304,6 +334,7 @@ input, textarea {
  	font-weight: 700;
  	font-size: 1.2rem;
 
+
 }
 .mainForm {
 	margin-top: 2rem;
@@ -312,6 +343,7 @@ input, textarea {
 	padding-left:  20rem;
 	vertical-align: top;
 }
+
 .map {
 	margin-top: 7rem;
 	display: inline-block;
@@ -566,7 +598,9 @@ input, textarea {
 		width: 100%;
 		padding-top: 4rem;
 	}
-
+	.button  {
+		text-align:left;
+	}
 }
 @media (max-width: 570px) {
 	
